@@ -6,7 +6,7 @@ body {
   font-family: "Inter", sans-serif;
 }
 /* header section */
-.sec-header {
+#sec-header {
   width: 100%;
   height: 80vh;
   background-image: linear-gradient(
@@ -57,7 +57,7 @@ body {
 
 /* amount section */
 
-.sec-amount {
+#sec-amount {
   margin: 10rem;
   text-align: center;
 }
@@ -68,9 +68,11 @@ body {
   margin-bottom: 1.2rem;
 }
 .flex-box {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
 }
 .amount {
   background-color: #fafafa;
@@ -80,6 +82,11 @@ body {
   font-size: 30px;
   font-weight: 700;
   color: #707070;
+}
+.amount-selected {
+  border: 2px solid #ff5959;
+  color: #ff5959;
+  background-color: #ffeeee;
 }
 .amount-input {
   display: block;
@@ -100,7 +107,7 @@ body {
 
 /* section donation plan */
 
-.sec-plan {
+#sec-plan {
   text-align: center;
   margin: 10rem 17rem;
 }
@@ -127,10 +134,54 @@ body {
   font-weight: 700;
   margin-bottom: 2rem;
 }
+/* section motivation */
 
+#sec-motivation {
+  position: relative;
+  background: linear-gradient(120deg, rgba(18, 18, 18, 0) 0%, #121212 100%);
+}
+.mot-quotes h1 {
+  text-align: right;
+  margin-bottom: 3rem;
+}
+.mot-img-box {
+  width: 43%;
+}
+.mot-quotes {
+  width: 57%;
+}
+.mot-quotes p {
+  color: white;
+  margin: auto 2rem;
+}
+
+.quote-left {
+  width: 50%;
+  text-align: center;
+}
+.mot-speaker {
+  width: 12.5em;
+  height: 12.5rem;
+  border-radius: 50%;
+}
+.quote-right {
+  width: 50%;
+  text-align: center;
+}
+.right-align {
+  text-align: justify;
+  text-align-last: right;
+}
+.margin-short {
+  margin-bottom: 2rem;
+}
+.img-kid {
+  width: 100%;
+  height: 69rem;
+}
 /* section get updates */
 
-.sec-get-updates {
+#sec-get-updates {
   text-align: center;
   margin: 10rem;
 }
@@ -161,6 +212,8 @@ form {
   margin: 0 auto;
   padding: 5rem;
 }
+
+/*footer section*/
 footer {
   margin-top: 5rem;
   background-color: #0b0d17;
