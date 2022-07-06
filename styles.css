@@ -166,6 +166,7 @@ body {
 }
 .speaker-left {
   margin-left: 40%;
+  margin-top: -2rem;
 }
 .speaker-right {
   margin-right: 40%;
